@@ -1,0 +1,19 @@
+<mat-tab-group>
+    <mat-tab label="First">
+        Content 1
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+ 
+    </mat-tab>
+
+    <mat-tab label="Second">Content 2
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+    </mat-tab>
+
+    <mat-tab label="Third">
+        third
+    </mat-tab>
+</mat-tab-group>

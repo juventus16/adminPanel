@@ -65,16 +65,16 @@ export class DashboardService {
   }
 
   displayedColumns() {
-    return ['position', 'name', 'weight', 'symbol'];
+    return ['code', 'count', 'quantity'];
   }
   
   dataSource() {
     return [
-      {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-      {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-      {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-      {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-      {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
+      {code: 'samsung', count: 35000, quantity: 10},
+      {code: 'hp', count: 23000, quantity: 5},
+      {code: 'lenovo', count: 17000, quantity: 8},
+      {code: 'dell', count: 12000, quantity: 4},
+      {code: 'apple', count: 8000, quantity: 2},
     ];
   }
 

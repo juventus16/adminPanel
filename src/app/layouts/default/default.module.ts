@@ -26,18 +26,23 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { CustomerComponent } from 'src/app/modules/customer/customer.component';
 
 // import { NgForm } from '@angular/forms';
-import { MatFormField, MatLabel, MatHint, MatError, } from '@angular/material/form-field';
+// import { MatFormField, MatLabel, MatHint, MatError, } from '@angular/material/form-field';
 
-import { MatInput } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
+import { MatIconModule } from '@angular/material/icon';
+
+// import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
   declarations: [
     DefaultComponent,
     DashboardComponent,
-    PostsComponent
+    PostsComponent,
+    CustomerComponent
   ],
   imports: [
     CommonModule,
@@ -54,6 +59,14 @@ import { MatInput } from '@angular/material/input';
     MatRadioModule,
     MatMenuModule,
     MatButtonModule,
+
+    // MatInput,
+    // MatToolbarModule,
+ 
+    // MatTableModule,
+    // MatPaginatorModule,
+    MatSortModule,
+    MatIconModule
   ],
   providers: [
     DashboardService
